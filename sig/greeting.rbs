@@ -1,0 +1,5 @@
+type greeting_params = {count: Integer, prefix: String?}
+
+class Greeting
+  def say_hello: (String, options: greeting_params) -> void
+end

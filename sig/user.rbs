@@ -1,0 +1,13 @@
+class User
+  attr_reader id: Integer
+  attr_reader name: String
+
+  attr_accessor greeting_params: greeting_params?
+
+  def self.find: (Integer id) -> User
+  def initialize: (Integer id, String name) -> void
+  def options: -> greeting_params?
+
+  private
+  def can_be_greeted?: -> bool
+end
